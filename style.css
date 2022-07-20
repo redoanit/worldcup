@@ -17,6 +17,7 @@ h1 {
     height: 646px;
     background-color: black;
     justify-content: center;
+    border-radius: 30px;
 
 
 }
@@ -80,6 +81,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 15px;
     max-width: 1008px;
+    grid-column-gap: 20px;
 }
 
 .BlogContent>button {
@@ -154,19 +156,139 @@ footer>div>ul {
 
 }
 
-/*resposnibe*/
+/*Other page Match Time*/
+
+.MatchTime {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+
+}
+
+.Match {
+
+    text-align: center;
+
+
+}
+
+/*resposnibe Banner*/
 @media only screen and (max-width:688px) {
+
+    body {
+        width: 350px;
+    }
+
     .Banner {
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
-        height: 1000px;
+        width: 688px;
+        height: 800px;
+        border-radius: 10px;
+    }
+
+    .Img {
+        margin: auto;
+
+    }
+
+    .Img>img {
+        width: 350px;
     }
 
     .Article {
-        margin-top: 20px;
-        font-size: 10px;
-        text-align: left;
+        margin: auto;
+        width: 350px;
+    }
 
+    .Article>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+    /*Responsibe menue*/
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 300px;
+    }
+
+    .Blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Responsive Footer*/
+    footer {
+        text-align: center;
+        width: 360px;
+        margin-left: 160px;
+    }
+
+    div>ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        row-gap: 15px;
+    }
+
+
+}
+
+/*Tablet Responsibe*/
+@media only screen and (max-width:992px) and (min-width:689px) {
+    body {
+        width: 689px;
+    }
+
+    .Banner {
+        width: 689px;
+        height: 646px;
+        border-radius: 5px;
+    }
+
+    .Article {
+        margin-top: 40px;
+        width: 250px;
+        height: 424px;
+    }
+
+    .Img {
+        width: 350px;
+        height: 500px;
+    }
+
+    /*Navigation var*/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        padding-top: 20px;
+        width: 688px;
+        height: 100px;
+        background-color: white;
+    }
+
+    .Nav>div:hover {
+        border: 2px solid blue;
+        border-radius: 5px;
+    }
+
+    /*news news*/
+    .Blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
     }
 }
